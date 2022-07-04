@@ -1,0 +1,7 @@
+Video-Link=  https://drive.google.com/file/d/1WKjZ9wGa9_w3ytH6BzjVlF6nyod7P3g0/view?usp=sharing
+
+
+
+Frontend-Link=https://magnificent-llama-db38b1.netlify.app/
+
+Backend-Link=https://beautiful-north-cascades-42551.herokuapp.com/api/items
