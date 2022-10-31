@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body > 
+    <div id="container">
+        <div id="heading">
+            <h2>Merchant Bill Payment</h2>
+        </div>
+        <div id="bill-main-heading">
+           <form id="formsub">
+            <div class="Innput-div">
+                <h5>Consumer Name</h5>
+                <input type="text" placeholder="Gyan Prakash Mishra" required id="consumerName"> 
+            </div> 
+            <div class="Innput-div">
+                <h5>Consumer Number</h5>
+                <input type="number" placeholder="969687618745545545" required id="consumerNumber">
+            </div> 
+            <div class="Innput-div">
+                <h5>Last Paid Detail</h5>
+                <input type="text" placeholder="Rs 1 paid on 2021 through NetBanking" required id="lastpaidDetail">
+            </div> 
+            <div class="Innput-div">
+                <h5>Bill Amount</h5>
+                <input type="number" placeholder="27239.56" required id="billAmount">
+            </div> 
+            <div class="Innput-div">
+                <h5>Bill Date</h5>
+                <input type="date" placeholder="25-06-2021" required id="date">
+            </div> 
+            
+            <div class="Innput-div">
+                <h5>E-mail</h5>
+                <input type="email" placeholder="gyan12081997@gmail.com" required id="email">
+            </div> 
+            <div class="Innput-div">
+                <h5>Mobile No</h5>
+                <input type="number" placeholder="9696876187" required id="number">
+            </div> 
+            <div class="Innput-div">
+                <h5>Select Payment Gateway</h5>
+               <div id="radioo">
+               
+                <input type="radio" value="Bill Desk" name="Bill Desk">
+                <label for="">Bill Desk</label>
+
+                <input type="radio" value="Bill Desk" name="Bill Desk">
+                <label for="">Paytm</label>
+               </div>
+            </div> 
+
+          <div>  <input type="submit" id="btn" id="submit"></div>
+           </form>
+
+        </div>
+
+    </div>
+    
+</body>
+<script src="./index.js"></script>
+</html>

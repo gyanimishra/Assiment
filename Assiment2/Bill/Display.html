@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      h2 {
+        text-align: center;
+      }
+      #container2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+      }
+      #innerdiv {
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: 30px;
+        gap: 20px;
+        margin-top: 50px;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.301);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      #innerdiv:hover {
+        background-color: white;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <h2>All Bills Details</h2>
+    <div id="container2"></div>
+  </body>
+</html>
+<script>
+  let Alldata = JSON.parse(localStorage.getItem("alldata")) || [];
+  
+
+  function displayData(Alldata) {
+    document.querySelector("#container2").innerText = null;
+
+    Alldata.map((ele, index) => {
+      let innerdiv = document.createElement("div");
+      innerdiv.setAttribute("id", "innerdiv");
+
+      let consumerName = document.createElement("h5");
+      consumerName.innerText = "ConsumerName:" + "    " + ele.consumerName;
+      let consumerNumber = document.createElement("p");
+      consumerNumber.innerText =
+        "ConsumerNumber:" + "    " + ele.consumerNumber;
+      let lastpaidDetail = document.createElement("p");
+      lastpaidDetail.innerText =
+        "LastPaidDetails:" + "    " + ele.lastpaidDetail;
+      let billAmount = document.createElement("p");
+      billAmount.innerText = "BillAmount:" + "    " + ele.billAmount;
+      let date = document.createElement("p");
+      date.innerText = "Paid Date:" + "    " + ele.date;
+      let email = document.createElement("p");
+      email.innerText = "ConsumerEmail:" + "    " + ele.email;
+      let number = document.createElement("p");
+      number.innerText = "ConsumerNumber:" + "    " + ele.number;
+
+      innerdiv.append(
+        consumerName,
+        consumerNumber,
+        lastpaidDetail,
+        billAmount,
+        date,
+        email,
+        number
+      );
+      let container = document.querySelector("#container2").append(innerdiv);
+      document.querySelector("#body").append(container);
+    });
+  }
+
+  displayData(Alldata);
+</script>
