@@ -34,7 +34,7 @@ const Login = () => {
 
     if (token) {
       alert("signup successfull");
-      navigate("/");
+      navigate("/home");
     } else {
       alert("InValid Login Credentials");
     }
