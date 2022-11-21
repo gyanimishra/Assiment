@@ -1,0 +1,9 @@
+.technology-icon {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    background: #F8F5ED;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}

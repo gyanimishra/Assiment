@@ -1,0 +1,25 @@
+.background-above {
+    background-color: #FFDA78 !important;
+    background: url("../../assets/Images/abovefooterbg.png") no-repeat;
+    z-index: -1;
+}
+
+.above-heading {
+height: 128px;
+width: 755px;
+left: 104px;
+top: 5562px;
+font-family: Syne;
+font-size: 48px;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: 0em;
+text-align: left;
+color: #101010;
+}
+
+@media screen and (max-width:900px) {
+    .above-heading {
+        width: 100%;
+    }
+}

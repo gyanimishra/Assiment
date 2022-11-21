@@ -1,0 +1,75 @@
+.specification-render-image {
+    width: 100%;
+}
+
+.specification-heading {
+height: 128px;
+width: 319px;
+left: 104px;
+top: 4049px;
+font-family: Syne;
+font-size: 48px;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: 0em;
+text-align: left;
+color: #333333;
+}
+
+.specification-little {
+height: 24px;
+width: 304px;
+left: 104px;
+top: 4197px;
+border-radius: undefinedpx;
+font-family: "Roboto";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #4F4F4F;
+}
+
+.spec-heading {
+width: 116px;
+height: 96px;
+left: 104px;
+top: 4297px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 96px;
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #4F4F4F;
+}
+
+.spec-little {
+width: 69px;
+height: 24px;
+left: 104px;
+top: 4393px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color:#828282
+}
+
+
+@media screen and (max-width:768px) {
+    .specification-heading {
+        width: 100%;
+    }
+    .specification-little {
+        width: 100%;
+    }
+    .spec-heading {
+        width: 100%;
+    }
+    .spec-little{
+        width: 100%;
+    }
+}

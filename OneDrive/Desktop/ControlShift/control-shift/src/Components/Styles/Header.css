@@ -1,0 +1,178 @@
+.underline {
+border-bottom: 3px solid #4F4F4F;
+border-bottom-width: 50%;
+}
+
+.footer {
+    background-color: #101010;
+}
+
+.header-background {
+    background-color: #FFDA78;
+}
+
+.header-para1 {
+font-family: "Syne";
+font-size: 48px;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: 0em;
+text-align: left;
+width: 569px;
+height: 128px;
+color: #333333;
+}
+
+.header-para2 {
+width: 300px;
+height: 128px;
+font-family: 'Syne';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 64px;
+/* or 133% */
+font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.header-para3 {
+width: 317px;
+height: 128px;
+font-family: 'Syne';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 50px;
+/* or 133% */
+font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.header-para4 {
+width: 544px;
+height: 192px;
+font-family: 'Syne';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 64px;
+/* or 133% */ 
+font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.para-para {
+font-family: "Satoshi";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color:#797979;
+}
+
+
+.para-para2 {
+width: 347px;
+height: 48px;
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+}
+
+.para-para3 {
+width: 381px;
+height: 48px;
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+.para-para4 {
+width: 179px;
+height: 24px;
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+.blur-effect {
+background: #FFE6A3;
+filter: blur(45px);
+height: 300px;
+width: 547px;
+position: absolute;
+z-index: -1;
+}
+
+.blur-effect1 {
+background: #FFE6A3;
+filter: blur(45px);
+height: 300px;
+width: 300px;
+position: absolute;
+z-index: -1;
+}
+
+.main-effect {
+    height: 824px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 700px;
+    min-width: 270px;
+}
+
+
+@media screen and (max-width:768px) {
+    .header-para1 {
+        width: 100%;
+        line-height: 50px;
+        font-size: 2.5rem;
+    }
+
+    .header-para2 {
+        width: 100%;
+        line-height: 50px;
+        font-size: 2.5rem;
+    }
+
+    .header-para3 {
+        width: 100%;
+        line-height: 50px;
+        font-size: 2.5rem;
+    }
+
+    .header-para4 {
+        width: 100%;
+        line-height: 50px;
+        font-size: 2.5rem;
+    }
+    
+    .para-para {
+        width: 100%;
+    }
+    .para-para2 {
+        width: 100%;
+    }
+    .para-para3 {
+        width: 100%;
+    }
+    .para-para1 {
+        width: 100%;
+    }
+
+    .blur-effect {
+        width: 50%;
+    }
+
+    .blur-effect1 {
+        width: 50%;
+    }
+}

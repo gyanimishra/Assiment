@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Poppins&family=Roboto&display=swap');
+@import './Components/Styles/Header.css';
+@import './Components/Styles/Footer.css';
+@import './Components/Styles/MobileSideBar.css';
+@import './Components/Styles/BenefitReviewCard.css';
+
+
+*,::before,::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  
+}
